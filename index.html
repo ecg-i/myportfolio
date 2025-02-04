@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!--==Nav==-->
+<!--desktop-nav-->
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#personal">Personal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+<!--hamburger-nav-->
+    <nav id="hamburger-nav">
+      <div class="logo">Erwin Gaon</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#personal" onclick="toggleMenu()">Personal</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+<!--==Profile==-->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src=".\assets\img\pic1.jpg" alt="Erwin Gaon main picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Erwin Gaon</h1>
+        <p class="section__text__p2">Student</p>
+        <div class="btn-container">
+         
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <div class="social__icons">
+            <a href="" class="social-icon"><i class='bx bxl-facebook'></i></a>
+            <a href="" class="social-icon"><i class='bx bxl-messenger' ></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ <!--==About==-->
+    <section id="about">
+      <p class="section__text__p1"></p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src=".\assets\img\pic2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/img/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Basic <br />Programming</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/img/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Ongoing<br/>Bachelor of Science in Information Technology Major in WebTech</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              With two years of hands-on experience in the field, I have refined my 
+              expertise in information technology, gaining valuable practical skills. 
+              To further strengthen my knowledge, I am currently pursuing a Bachelor 
+              of Science in Information Technology Major in WebTech, deepening my understanding 
+              of emerging technologies and industry trends. This blend of experience 
+              and education empowers me to thrive in the ever-evolving IT landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+  <!--==Experience==-->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <a href="" class="exp-icon"><i class='bx bxl-html5'></i></a>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <a href="" class="exp-icon"><i class='bx bxl-css3'></i></a>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <a href="" class="exp-icon"><i class='bx bxl-java'></i></a>
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <a href="" class="exp-icon"><i class='bx bxl-javascript'></i></a>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Professional Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Leadership</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creativity</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Teamwork</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Time Management</h4>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#personal'"
+      />
+    </section>
+
+<!--==Personal==-->
+    <section id="personal">
+      <p class="section__text__p1"> My</p>
+      <h1 class="title">Personal</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=".\assets\img\pic.jpg"
+                alt="personal 1"
+                class="personal-img"
+              />
+            </div>
+            <h2 class="experience-sub-title personal-title">Baseball</h2>
+            <div class="btn-container">
+            
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=".\assets\img\pic3.jpg"
+                alt="personal 2"
+                class="personal-img"
+              />
+            </div>
+            <h2 class="experience-sub-title personal-title">Basketball</h2>
+            <div class="btn-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=".\assets\img\pic4.jpg"
+                alt="personal 3"
+                class="personal-img"
+              />
+             
+            </div>
+            <h2 class="experience-sub-title personal-title">Watching</h2>
+            <div class="btn-container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+
+          <a href="" class="icon"><i class='bx bxl-gmail'></i></a>
+
+          <p><a href="mailto:BalbsSample@gmail.com">ErwinTesting@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2025 Erwin Gaon. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
